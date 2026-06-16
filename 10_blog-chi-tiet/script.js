@@ -2,7 +2,7 @@ const POSTS = {
   'meo-dap-cau': {
     tag: 'Tips Kỹ Thuật', tagCat: 'tips',
     title: '5 Mẹo Cải Thiện Cú Đập Cầu Cho Người Mới',
-    date: '01/11/2024', author: 'Butminton Team', readTime: '5 phút đọc',
+    date: '01/11/2026', author: 'Butminton Team', readTime: '5 phút đọc',
     authorInitials: 'BT', authorRole: 'Đội ngũ Butminton',
     img: '../images/vot/racket-flower-hong-pink.png',
     content: `
@@ -33,7 +33,7 @@ const POSTS = {
   'cang-cuoc': {
     tag: 'Tips Kỹ Thuật', tagCat: 'tips',
     title: 'Cách Chọn Độ Căng Cước Phù Hợp Với Trình Độ Của Bạn',
-    date: '28/10/2024', author: 'Butminton Team', readTime: '4 phút đọc',
+    date: '28/10/2026', author: 'Butminton Team', readTime: '4 phút đọc',
     authorInitials: 'BT', authorRole: 'Đội ngũ Butminton',
     img: '../images/vot/racket-kumpoo-jingzhou.png',
     content: `
@@ -59,8 +59,8 @@ const POSTS = {
 
   'review-kumpoo': {
     tag: 'Review Sản Phẩm', tagCat: 'review',
-    title: 'Review Kumpoo K520 Pro – Vợt Tầm Trung Đáng Mua Nhất 2024',
-    date: '20/10/2024', author: 'Butminton Team', readTime: '6 phút đọc',
+    title: 'Review Kumpoo K520 Pro – Vợt Tầm Trung Đáng Mua Nhất 2026',
+    date: '20/10/2026', author: 'Butminton Team', readTime: '6 phút đọc',
     authorInitials: 'BT', authorRole: 'Đội ngũ Butminton',
     img: '../images/vot/racket-kumpoo-plum.png',
     content: `
@@ -103,7 +103,7 @@ const POSTS = {
   'hau-truong': {
     tag: 'Lifestyle & Vlog', tagCat: 'lifestyle',
     title: 'Một Ngày Với Đội Butminton – Hậu Trường Buổi Chụp Hình Sản Phẩm',
-    date: '15/10/2024', author: 'Hoàng Ngọc Ánh', readTime: '4 phút đọc',
+    date: '15/10/2026', author: 'Hoàng Ngọc Ánh', readTime: '4 phút đọc',
     authorInitials: 'HNA', authorRole: 'Designer – Butminton',
     img: '../images/ao/ao-thi-dau-do-1.png',
     content: `
@@ -126,7 +126,7 @@ const POSTS = {
   'khoi-dong': {
     tag: 'Tips Kỹ Thuật', tagCat: 'tips',
     title: 'Bài Tập Khởi Động 10 Phút Trước Khi Vào Sân Cầu Lông',
-    date: '10/10/2024', author: 'Butminton Team', readTime: '4 phút đọc',
+    date: '10/10/2026', author: 'Butminton Team', readTime: '4 phút đọc',
     authorInitials: 'BT', authorRole: 'Đội ngũ Butminton',
     img: '../images/vot/racket-flower-xanh.png',
     content: `
@@ -157,7 +157,7 @@ const POSTS = {
   'ra-mat': {
     tag: 'Nhật Ký Shop', tagCat: 'nhatky',
     title: 'Butminton Chính Thức Ra Mắt – Câu Chuyện Đằng Sau Những Hộp Hàng Đầu Tiên',
-    date: '05/10/2024', author: 'Cao Thị Thanh Trúc', readTime: '5 phút đọc',
+    date: '05/10/2026', author: 'Cao Thị Thanh Trúc', readTime: '5 phút đọc',
     authorInitials: 'CTT', authorRole: 'Founder – Butminton',
     img: '../images/ao/set-ao-quan-do.png',
     content: `
@@ -181,7 +181,7 @@ const POSTS = {
   'ao-vs-ngoai': {
     tag: 'Review Sản Phẩm', tagCat: 'review',
     title: 'So Sánh Áo Cầu Lông Butminton vs Các Thương Hiệu Ngoại – Ai Thắng?',
-    date: '01/10/2024', author: 'Butminton Team', readTime: '5 phút đọc',
+    date: '01/10/2026', author: 'Butminton Team', readTime: '5 phút đọc',
     authorInitials: 'BT', authorRole: 'Đội ngũ Butminton',
     img: '../images/ao/ao-thi-dau-xanh-1.png',
     content: `
