@@ -1,0 +1,5 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; background: #fff8f7; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+.coin-page { text-align: center; padding: 40px; }
+.coin-img { width: 180px; height: 180px; object-fit: contain; margin: 0 auto 20px; display: block; }
+.coin-label { font-size: 14px; color: #59413f; }

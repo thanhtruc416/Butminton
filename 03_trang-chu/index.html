@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Chủ - Butminton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo"><img src="../images/logo.png" alt="Butminton"></a>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="active">Trang chủ</a></li>
+        <li><a href="../01_san-pham/index.html">Sản phẩm</a></li>
+        <li><a href="../07_ve-chung-toi/index.html">Về chúng tôi</a></li>
+        <li><a href="../08_blog/index.html">Blog</a></li>
+        <li><a href="../09_lien-he/index.html">Liên hệ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search-wrap">
+          <input type="text" placeholder="Tìm kiếm sản phẩm...">
+          <button type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+        </div>
+        <a href="../04_gio-hang/index.html" class="cart-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" style="background-image:url('../images/hero-bg.jpg')">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-tag">Thương hiệu cầu lông Việt</span>
+      <h1>ĐẸP TỪ CÁN<br>BÁ TỪNG TRẬN CẦU</h1>
+      <p>Butminton — nơi đam mê cầu lông gặp phong cách riêng. Vợt chuẩn hãng, áo đấu cá tính, keychain độc quyền.</p>
+      <div class="hero-btns">
+        <a href="../01_san-pham/index.html" class="btn-primary">Khám phá ngay</a>
+        <a href="../07_ve-chung-toi/index.html" class="btn-ghost">Về chúng tôi</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-categories">
+    <div class="container">
+      <h2 class="section-title">Danh Mục Sản Phẩm</h2>
+      <div class="cat-grid">
+        <a href="../01_san-pham/index.html" class="cat-card">
+          <div class="cat-img" style="background:#ffe9e7">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <span>Set vợt</span>
+        </a>
+        <a href="../01_san-pham/index.html" class="cat-card">
+          <div class="cat-img" style="background:#fff0ef">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <span>Áo thể thao</span>
+        </a>
+        <a href="../01_san-pham/index.html" class="cat-card">
+          <div class="cat-img" style="background:#ffe8e8">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <span>Quần · Váy</span>
+        </a>
+        <a href="../01_san-pham/index.html" class="cat-card">
+          <div class="cat-img" style="background:#ffe9e7">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 001 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <span>Hộp cầu lông</span>
+        </a>
+        <a href="../01_san-pham/index.html" class="cat-card">
+          <div class="cat-img" style="background:#fff0ef">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <span>Custom Keychain</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-products">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+        <a href="../01_san-pham/index.html" class="view-all">Xem tất cả →</a>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="prod-img-wrap"><span class="badge">BEST SELLER</span><img src="../images/vot/racket-kumpoo-plum.png" alt="Kumpoo Plum Blossom"></div>
+          <div class="prod-info">
+            <h3>Kumpoo Plum Blossom</h3>
+            <p>High Modulus Carbon, 4U, họa tiết hoa mai, all-round mọi trình độ</p>
+            <div class="prod-price"><span class="price-now">700.000đ</span><span class="price-old">880.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=kumpoo-plum" class="btn-view">Xem thêm</a><button class="btn-cart-add">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="prod-img-wrap"><span class="badge">HOT</span><img src="../images/vot/racket-flower-hong-white.png" alt="Flower Partner Hồng"></div>
+          <div class="prod-info">
+            <h3>Lasport Flower Partner Hồng</h3>
+            <p>100% Carbon, 4U, căng sẵn 11kg, tặng kèm quấn cán + dây cước</p>
+            <div class="prod-price"><span class="price-now">550.000đ</span><span class="price-old">680.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=flower-hong-white" class="btn-view">Xem thêm</a><button class="btn-cart-add">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="prod-img-wrap"><span class="badge">MỚI</span><img src="../images/ao/ao-thi-dau-do-1.png" alt="Áo thi đấu đỏ"></div>
+          <div class="prod-info">
+            <h3>Set thi đấu Yonex Navy</h3>
+            <p>Bộ áo + quần Yonex, tay xanh navy cổ điển, vải thun mề siêu nhẹ nhanh khô</p>
+            <div class="prod-price"><span class="price-now">150.000đ</span><span class="price-old">199.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=ao-do-1" class="btn-view">Xem thêm</a><button class="btn-cart-add">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="prod-img-wrap"><span class="badge">HOT</span><img src="../images/ao/set-ao-quan-do.png" alt="Set áo quần đỏ"></div>
+          <div class="prod-info">
+            <h3>Áo thi đấu Voltrix Hồng Camo</h3>
+            <p>Cổ V, họa tiết camo hồng trắng phá cách, thể hiện cá tính riêng</p>
+            <div class="prod-price"><span class="price-now">299.000đ</span><span class="price-old">380.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=set-ao-quan" class="btn-view">Xem thêm</a><button class="btn-cart-add">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brand-story">
+    <div class="container brand-story-inner">
+      <div class="brand-story-img"><img src="../images/cover2.jpg" alt="Butminton Brand Story"></div>
+      <div class="brand-story-text">
+        <span class="section-tag">Câu chuyện của chúng tôi</span>
+        <h2>Butminton ra đời<br>từ tình yêu cầu lông</h2>
+        <p>Chúng tôi là những bạn trẻ yêu cầu lông, muốn mang đến trải nghiệm mua sắm tốt hơn cho cộng đồng cầu lông Việt Nam. Từ vợt chất lượng đến trang phục cá tính, mọi sản phẩm đều được chọn lọc kỹ càng.</p>
+        <a href="../07_ve-chung-toi/index.html" class="btn-primary">Tìm hiểu thêm</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us">
+    <div class="container">
+      <h2 class="section-title">Tại Sao Chọn Butminton?</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+          <h3>Chính hãng 100%</h3>
+          <p>Tất cả sản phẩm nhập khẩu chính ngạch, có chứng từ và kiểm tra chất lượng trước khi đến tay bạn.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+          <h3>Ship nội thành 2H</h3>
+          <p>Giao hàng nhanh trong 2 giờ tại TP.HCM và Hà Nội. Đặt là có ngay!</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg></div>
+          <h3>Đổi trả 7 ngày</h3>
+          <p>Không ưng ý? Đổi trả miễn phí trong 7 ngày, không cần lý do phức tạp.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <h3>Tư vấn chuyên nghiệp</h3>
+          <p>Đội ngũ am hiểu cầu lông, hỗ trợ chọn sản phẩm phù hợp nhất với bạn.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slogan-banner">
+    <div class="container">
+      <h2>ĐẸP TỪ CÁN, BÁ TỪNG TRẬN CẦU.</h2>
+      <p>Cùng Butminton chinh phục từng trận cầu với phong cách riêng của bạn.</p>
+      <a href="../01_san-pham/index.html" class="btn-white">Khám phá ngay</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../images/logo.png" alt="Butminton" height="48">
+        <p>Thương hiệu cầu lông thế hệ mới —<br>ĐẸP TỪ CÁN, BÁ TỪNG TRẬN CẦU.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/butminton.uel/" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a>
+          <a href="#" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/></svg>TikTok</a>
+          <a href="#" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Sản phẩm</h4>
+        <a href="../01_san-pham/index.html">Vợt cầu lông</a>
+        <a href="../01_san-pham/index.html">Áo thể thao</a>
+        <a href="../01_san-pham/index.html">Hộp cầu lông</a>
+        <a href="../01_san-pham/index.html">Custom Keychain</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <a href="../09_lien-he/index.html">Chính sách đổi trả</a>
+        <a href="../09_lien-he/index.html">Chính sách giao hàng</a>
+        <a href="../09_lien-he/index.html">Liên hệ</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Butminton. All rights reserved.</p></div>
+  </footer>
+
+  <a href="../09_lien-he/index.html" class="chatbot-fab" title="Nhắn tin tư vấn">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+  </a>
+    <script src="../asset/cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

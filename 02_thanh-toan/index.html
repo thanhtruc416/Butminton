@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh Toán - Butminton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../03_trang-chu/index.html" class="logo"><img src="../images/logo.png" alt="Butminton"></a>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="../03_trang-chu/index.html">Trang chủ</a></li>
+        <li><a href="../01_san-pham/index.html">Sản phẩm</a></li>
+        <li><a href="../07_ve-chung-toi/index.html">Về chúng tôi</a></li>
+        <li><a href="../08_blog/index.html">Blog</a></li>
+        <li><a href="../09_lien-he/index.html">Liên hệ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search-wrap">
+          <input type="text" placeholder="Tìm kiếm sản phẩm...">
+          <button type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+        </div>
+        <a href="../04_gio-hang/index.html" class="cart-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="checkout-section">
+    <div class="checkout-wrap">
+      <div class="checkout-topbar">
+        <h1 class="checkout-title">Thanh Toán</h1>
+      </div>
+
+      <div class="checkout-steps">
+        <span class="step">Giỏ hàng</span>
+        <span class="step-sep">›</span>
+        <span class="step active">Thông tin giao hàng</span>
+        <span class="step-sep">›</span>
+        <span class="step">Xác nhận</span>
+      </div>
+
+      <form id="checkoutForm">
+        <div class="checkout-cols">
+          <!-- CỘT TRÁI: BLOCK 1 -->
+          <div class="checkout-col-left">
+            <div class="checkout-block">
+              <div class="block-heading">
+                <div class="block-num">1</div>
+                <h2>Thông tin giao hàng</h2>
+              </div>
+              <div class="form-row two-col">
+                <div class="form-group">
+                  <label>Họ và tên *</label>
+                  <input type="text" placeholder="Nguyễn Văn A" required>
+                </div>
+                <div class="form-group">
+                  <label>Số điện thoại *</label>
+                  <input type="tel" placeholder="0901 234 567" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="email@example.com">
+              </div>
+              <div class="form-row two-col">
+                <div class="form-group">
+                  <label>Khu vực giao hàng</label>
+                  <input type="text" value="TP. Hồ Chí Minh" readonly style="background:#f3eded;color:var(--muted);cursor:not-allowed;">
+                </div>
+                <div class="form-group">
+                  <label>Phường / Xã *</label>
+                  <input type="text" placeholder="VD: Phường Bến Nghé" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Địa chỉ chi tiết *</label>
+                <input type="text" placeholder="Số nhà, tên đường" required>
+              </div>
+              <div class="form-group">
+                <label>Ghi chú (nếu có)</label>
+                <textarea rows="3" placeholder="Giao giờ hành chính, gọi trước khi giao..."></textarea>
+              </div>
+              <label class="checkbox-label">
+                <input type="checkbox"> Lưu thông tin giao hàng cho lần sau
+              </label>
+            </div>
+          </div>
+
+          <!-- CỘT PHẢI: BLOCK 2 + 3 -->
+          <div class="checkout-col-right">
+            <div class="checkout-block">
+              <div class="block-heading">
+                <div class="block-num">2</div>
+                <h2>Phương thức thanh toán</h2>
+              </div>
+              <div class="payment-methods">
+                <div class="payment-card selected">
+                  <div class="payment-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                  </div>
+                  <div class="payment-info">
+                    <strong>COD</strong>
+                    <span>Thanh toán khi nhận hàng</span>
+                  </div>
+                </div>
+                <div class="payment-card">
+                  <div class="payment-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  </div>
+                  <div class="payment-info">
+                    <strong>Ngân hàng</strong>
+                    <span>Chuyển khoản qua QR</span>
+                  </div>
+                </div>
+                <div class="payment-card">
+                  <div class="payment-icon">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                  </div>
+                  <div class="payment-info">
+                    <strong>Ví MoMo</strong>
+                    <span>Thanh toán qua QR MoMo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="checkout-block">
+              <div class="block-heading">
+                <div class="block-num">3</div>
+                <h2>Mã giảm giá</h2>
+              </div>
+              <div class="coupon-inline">
+                <input type="text" id="couponInput" placeholder="VD: BUTMINTON24">
+                <button type="button" class="btn-apply" onclick="applyCoupon()">Áp dụng</button>
+              </div>
+              <span id="couponSuccess" class="coupon-ok" style="display:none">&#10003; Bạn đã tiết kiệm được 50.000đ!</span>
+              <div id="couponMsg" class="coupon-err" style="display:none"></div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- STICKY BOTTOM BAR -->
+    <div class="checkout-bottom">
+      <div class="checkout-bottom-inner">
+        <div class="bottom-summary">
+          <div class="bottom-item">
+            <span>Tạm tính</span>
+            <span id="subtotalBottom">1.055.000đ</span>
+          </div>
+          <div class="divider-v"></div>
+          <div class="bottom-item">
+            <span>Vận chuyển</span>
+            <span id="shippingBottom" style="color:#2e7d32;font-weight:700">Miễn phí</span>
+          </div>
+          <div class="bottom-item discount-line" id="discountRow" style="display:none">
+            <span>Giảm giá</span>
+            <span id="discountAmt">-50.000đ</span>
+          </div>
+        </div>
+        <div class="bottom-total-block">
+          <span class="bottom-total-label">Tổng cộng</span>
+          <span class="bottom-total-amount" id="totalPrice">1.055.000đ</span>
+        </div>
+        <button class="btn-order-final" onclick="submitOrder()">Đặt hàng ngay</button>
+        <p class="bottom-secure">Thanh toán bảo mật</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../images/logo.png" alt="Butminton" height="48">
+        <p>Thương hiệu cầu lông thế hệ mới —<br>ĐẸP TỪ CÁN, BÁ TỪNG TRẬN CẦU.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/butminton.uel/" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a>
+          <a href="#" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/></svg>TikTok</a>
+          <a href="#" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Sản phẩm</h4>
+        <a href="../01_san-pham/index.html">Vợt cầu lông</a>
+        <a href="../01_san-pham/index.html">Áo thể thao</a>
+        <a href="../01_san-pham/index.html">Hộp cầu lông</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <a href="../09_lien-he/index.html">Chính sách đổi trả</a>
+        <a href="../09_lien-he/index.html">Liên hệ</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2024 Butminton. All rights reserved.</p></div>
+  </footer>
+
+  <!-- ORDER SUCCESS MODAL -->
+  <div class="modal-overlay" id="orderModal">
+    <div class="modal-box">
+      <div class="modal-icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h3 class="modal-title">Đặt hàng thành công!</h3>
+      <p class="modal-msg">Cảm ơn bạn đã mua hàng tại Butminton.<br>Chúng tôi sẽ liên hệ xác nhận đơn hàng sớm nhất.</p>
+      <button class="modal-btn" onclick="closeOrderModal()">Về trang chủ</button>
+    </div>
+  </div>
+
+  <a href="../09_lien-he/index.html" class="chatbot-fab" title="Nhắn tin tư vấn">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+  </a>
+    <script src="../asset/cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sản Phẩm - Butminton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../03_trang-chu/index.html" class="logo"><img src="../images/logo.png" alt="Butminton"></a>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="../03_trang-chu/index.html">Trang chủ</a></li>
+        <li><a href="index.html" class="active">Sản phẩm</a></li>
+        <li><a href="../07_ve-chung-toi/index.html">Về chúng tôi</a></li>
+        <li><a href="../08_blog/index.html">Blog</a></li>
+        <li><a href="../09_lien-he/index.html">Liên hệ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search-wrap">
+          <input type="text" placeholder="Tìm kiếm sản phẩm...">
+          <button type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+        </div>
+        <a href="../04_gio-hang/index.html" class="cart-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container"><h1>Danh Mục Sản Phẩm</h1></div>
+  </section>
+
+  <section class="category-section">
+    <div class="container">
+      <div class="cat-tabs">
+        <button class="cat-tab active" data-cat="all">Tất cả</button>
+        <button class="cat-tab" data-cat="vot">Vợt cầu lông</button>
+        <button class="cat-tab" data-cat="ao">Áo thể thao</button>
+        <button class="cat-tab" data-cat="cau">Hộp cầu lông</button>
+        <button class="cat-tab" data-cat="mockhoa">Móc khóa</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="filter-bar">
+    <div class="container filter-inner">
+      <div class="filter-left">
+        <select class="filter-select"><option>Phù hợp với</option><option>Nam</option><option>Nữ</option><option>Trẻ em</option></select>
+        <select class="filter-select"><option>Sắp xếp theo</option><option>Giá tăng dần</option><option>Giá giảm dần</option><option>Mới nhất</option></select>
+      </div>
+      <span class="filter-count">Hiển thị 6 sản phẩm</span>
+    </div>
+  </section>
+
+  <section class="products-section">
+    <div class="container">
+      <div class="products-grid" id="productsGrid">
+        <div class="product-card" data-cat="vot">
+          <div class="prod-img-wrap"><span class="badge">HOT</span><img src="../images/vot/racket-flower-hong-white.png" alt="Flower Partner Hồng cước trắng"></div>
+          <div class="prod-info">
+            <h3>Lasport Flower Partner Hồng</h3>
+            <p>100% Carbon, 4U (82g), căng sẵn 11kg, tặng kèm quấn cán + dây cước</p>
+            <div class="prod-price"><span class="price-now">550.000đ</span><span class="price-old">680.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=flower-hong-white" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="vot">
+          <div class="prod-img-wrap"><span class="badge">MỚI</span><img src="../images/vot/racket-flower-xanh.png" alt="Flower Partner Xanh cước xanh mint"></div>
+          <div class="prod-info">
+            <h3>Lasport Flower Partner Xanh</h3>
+            <p>100% Carbon, 4U (82g), cước xanh mint, căng sẵn 11kg, tặng kèm phụ kiện</p>
+            <div class="prod-price"><span class="price-now">480.000đ</span><span class="price-old">600.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=flower-xanh" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="vot">
+          <div class="prod-img-wrap"><span class="badge">HOT</span><img src="../images/vot/racket-flower-hong-pink.png" alt="Flower Partner Hồng cước hồng"></div>
+          <div class="prod-info">
+            <h3>Lasport Flower Partner Hồng (cước hồng)</h3>
+            <p>100% Carbon, 4U (82g), cước hồng nổi bật, căng sẵn 11kg</p>
+            <div class="prod-price"><span class="price-now">620.000đ</span><span class="price-old">750.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=flower-hong-pink" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="vot">
+          <div class="prod-img-wrap"><span class="badge">MỚI</span><img src="../images/vot/racket-flower-white.png" alt="Flower Partner trắng"></div>
+          <div class="prod-info">
+            <h3>Lasport Flower Partner (trắng)</h3>
+            <p>100% Carbon, 4U (82g), frame trắng tinh, căng sẵn 11kg</p>
+            <div class="prod-price"><span class="price-now">500.000đ</span><span class="price-old">630.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=flower-white" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="vot">
+          <div class="prod-img-wrap"><span class="badge">BEST SELLER</span><img src="../images/vot/racket-kumpoo-jingzhou.png" alt="Kumpoo Jingzhou Yangzhou"></div>
+          <div class="prod-info">
+            <h3>Kumpoo Jingzhou-Yangzhou</h3>
+            <p>100% Carbon, 4U, cán trắng thiết kế cổ điển, tặng kèm quà 300.000đ</p>
+            <div class="prod-price"><span class="price-now">690.000đ</span><span class="price-old">850.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=kumpoo-jingzhou" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="vot">
+          <div class="prod-img-wrap"><span class="badge">BEST SELLER</span><img src="../images/vot/racket-kumpoo-plum.png" alt="Kumpoo Plum Blossom Wintersweet"></div>
+          <div class="prod-info">
+            <h3>Kumpoo Plum Blossom (Wintersweet)</h3>
+            <p>High Modulus Carbon, 4U (82g), họa tiết hoa mai, all-round phù hợp mọi trình độ</p>
+            <div class="prod-price"><span class="price-now">700.000đ</span><span class="price-old">880.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=kumpoo-plum" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="ao">
+          <div class="prod-img-wrap"><span class="badge">MỚI</span><img src="../images/ao/ao-thi-dau-do-1.png" alt="Áo thi đấu đỏ 1"></div>
+          <div class="prod-info">
+            <h3>Set thi đấu Yonex Navy</h3>
+            <p>Bộ áo + quần Yonex, tay xanh navy cổ điển, vải thun mề siêu nhẹ nhanh khô</p>
+            <div class="prod-price"><span class="price-now">150.000đ</span><span class="price-old">199.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=ao-do-1" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="ao">
+          <div class="prod-img-wrap"><span class="badge">HOT</span><img src="../images/ao/ao-thi-dau-do-2.png" alt="Áo thi đấu đỏ 2"></div>
+          <div class="prod-info">
+            <h3>Set thi đấu Yonex Hoa Văn</h3>
+            <p>Bộ áo + quần họa tiết rực rỡ, in chuyển nhiệt siêu bền +1000 lần giặt</p>
+            <div class="prod-price"><span class="price-now">199.000đ</span><span class="price-old">250.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=ao-do-2" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="ao">
+          <div class="prod-img-wrap"><span class="badge">MỚI</span><img src="../images/ao/ao-thi-dau-xanh-1.png" alt="Áo thi đấu xanh 1"></div>
+          <div class="prod-info">
+            <h3>Áo thi đấu Voltrix Hồng Hình Học</h3>
+            <p>Cổ tròn, họa tiết hình học hồng trắng nổi bật, co giãn 4 chiều</p>
+            <div class="prod-price"><span class="price-now">120.000đ</span><span class="price-old">160.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=ao-xanh-1" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="ao">
+          <div class="prod-img-wrap"><span class="badge">MỚI</span><img src="../images/ao/ao-thi-dau-xanh-2.png" alt="Áo thi đấu xanh 2"></div>
+          <div class="prod-info">
+            <h3>Áo thi đấu Voltrix Xanh Mint</h3>
+            <p>Cổ tròn, họa tiết crystal xanh mint tươi mát, thấm hút mồ hôi vượt trội</p>
+            <div class="prod-price"><span class="price-now">169.000đ</span><span class="price-old">220.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=ao-xanh-2" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="ao">
+          <div class="prod-img-wrap"><span class="badge">MỚI</span><img src="../images/ao/ao-thi-dau-trang.png" alt="Áo thi đấu trắng"></div>
+          <div class="prod-info">
+            <h3>Áo thi đấu Voltrix Chéo Pastel</h3>
+            <p>Cổ V, họa tiết sọc chéo hồng xanh pastel, phối màu nhẹ nhàng cá tính</p>
+            <div class="prod-price"><span class="price-now">135.000đ</span><span class="price-old">180.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=ao-trang" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="ao">
+          <div class="prod-img-wrap"><span class="badge">HOT</span><img src="../images/ao/ao-thi-dau-den.png" alt="Áo thi đấu đen"></div>
+          <div class="prod-info">
+            <h3>Áo thi đấu Voltrix Sóng Pastel</h3>
+            <p>Cổ V, họa tiết sóng chảy hồng xanh, phối màu năng động thanh lịch</p>
+            <div class="prod-price"><span class="price-now">180.000đ</span><span class="price-old">230.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=ao-den" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="ao">
+          <div class="prod-img-wrap"><span class="badge">MỚI</span><img src="../images/ao/quan-cau-long-do.png" alt="Áo Voltrix Tím Hồng"></div>
+          <div class="prod-info">
+            <h3>Áo thi đấu Voltrix Tím Hồng</h3>
+            <p>Cổ V, tone tím hồng pastel gradient, dành cho người yêu phong cách nữ tính</p>
+            <div class="prod-price"><span class="price-now">250.000đ</span><span class="price-old">310.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=quan-do" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="ao">
+          <div class="prod-img-wrap"><span class="badge">MỚI</span><img src="../images/ao/quan-cau-long-xanh.png" alt="Áo Voltrix Xanh Gradient"></div>
+          <div class="prod-info">
+            <h3>Áo thi đấu Voltrix Xanh Gradient</h3>
+            <p>Cổ V, gradient xanh biển tươi mát, logo Voltrix tinh tế</p>
+            <div class="prod-price"><span class="price-now">230.000đ</span><span class="price-old">290.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=quan-xanh" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="ao">
+          <div class="prod-img-wrap"><span class="badge">HOT</span><img src="../images/ao/set-ao-quan-do.png" alt="Set áo quần đỏ"></div>
+          <div class="prod-info">
+            <h3>Áo thi đấu Voltrix Hồng Camo</h3>
+            <p>Cổ V, họa tiết camo hồng trắng phá cách, thể hiện cá tính riêng</p>
+            <div class="prod-price"><span class="price-now">299.000đ</span><span class="price-old">380.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=set-ao-quan" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="cau">
+          <div class="prod-img-wrap"><span class="badge">PHỔ BIẾN</span><img src="../images/hopcau/cau-haiyen-outdoor.png" alt="Cầu Hải Yến Outdoor"></div>
+          <div class="prod-info">
+            <h3>Cầu lông Hải Yến Outdoor</h3>
+            <p>Lông vũ thật, ống 12 quả, dùng ngoài trời, bền lông tốt</p>
+            <div class="prod-price"><span class="price-now">180.000đ</span><span class="price-old">220.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=haiyen-outdoor" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="cau">
+          <div class="prod-img-wrap"><span class="badge">HOT</span><img src="../images/hopcau/cau-haiyen-hyya-hong.png" alt="Cầu Hải Yến HYYA Hồng"></div>
+          <div class="prod-info">
+            <h3>Cầu lông Hải Yến HYYA Hồng</h3>
+            <p>Ống hồng độc đáo, lông vũ tuyển chọn, đường cầu ổn định, tốc độ chuẩn</p>
+            <div class="prod-price"><span class="price-now">250.000đ</span><span class="price-old">300.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=haiyen-hyya" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="cau">
+          <div class="prod-img-wrap"><span class="badge">MỚI</span><img src="../images/hopcau/cau-haiyen-hytec-s90-1.png" alt="Cầu Hải Yến Hytec S-90 3in1"></div>
+          <div class="prod-info">
+            <h3>Cầu lông Hải Yến Hytec S-90 3in1</h3>
+            <p>3 tốc độ trong 1 ống, lông tuyển chọn ít gãy, đường cầu ổn định chính xác</p>
+            <div class="prod-price"><span class="price-now">280.000đ</span><span class="price-old">340.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=haiyen-hytec-s90-1" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="cau">
+          <div class="prod-img-wrap"><span class="badge">TỐC 3</span><img src="../images/hopcau/cau-haiyen-s80-toc3.png" alt="Cầu Hải Yến S-80 Tốc 3"></div>
+          <div class="prod-info">
+            <h3>Cầu lông Hải Yến S-80 Tournament Tốc 3</h3>
+            <p>Tournament cao cấp tốc độ 3, lông vũ bền chắc phù hợp thi đấu chuyên nghiệp</p>
+            <div class="prod-price"><span class="price-now">215.000đ</span><span class="price-old">260.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=haiyen-s80-toc3" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="cau">
+          <div class="prod-img-wrap"><span class="badge">CHÍNH HÃNG</span><img src="../images/hopcau/cau-haiyen-s70.png" alt="Cầu Hải Yến S-70 Competition"></div>
+          <div class="prod-info">
+            <h3>Cầu lông Hải Yến S-70 Competition</h3>
+            <p>Dòng thi đấu competition, độ bền cao, đường cầu chuẩn xác, 12 quả/ống</p>
+            <div class="prod-price"><span class="price-now">195.000đ</span><span class="price-old">240.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=haiyen-s70" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="cau">
+          <div class="prod-img-wrap"><span class="badge">PHỔ BIẾN</span><img src="../images/hopcau/cau-haiyen-s80.png" alt="Cầu Hải Yến S-80 Tournament"></div>
+          <div class="prod-info">
+            <h3>Cầu lông Hải Yến S-80 Tournament</h3>
+            <p>Dòng tournament bán chạy nhất, cân bằng tốt giữa độ bền và tốc độ bay</p>
+            <div class="prod-price"><span class="price-now">220.000đ</span><span class="price-old">270.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=haiyen-s80" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="cau">
+          <div class="prod-img-wrap"><span class="badge">MỚI</span><img src="../images/hopcau/cau-haiyen-hytec-s90-2.png" alt="Cầu Hải Yến Hytec S-90"></div>
+          <div class="prod-info">
+            <h3>Cầu lông Hải Yến Hytec S-90 Xanh</h3>
+            <p>Ống xanh nổi bật, độ bền vượt trội ít gãy lông, chất liệu lông tuyển chọn</p>
+            <div class="prod-price"><span class="price-now">270.000đ</span><span class="price-old">320.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=haiyen-hytec-s90-2" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="cau">
+          <div class="prod-img-wrap"><span class="badge">GIÁ TỐT</span><img src="../images/hopcau/cau-haiyen-xanh-12.png" alt="Cầu Hải Yến Xanh 12 quả"></div>
+          <div class="prod-info">
+            <h3>Cầu lông Hải Yến Xanh 12 Quả</h3>
+            <p>Ống 12 quả lông vũ chính hãng Hải Yến, phù hợp tập luyện hàng ngày</p>
+            <div class="prod-price"><span class="price-now">185.000đ</span><span class="price-old">225.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=haiyen-xanh-12" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="cau">
+          <div class="prod-img-wrap"><span class="badge">GIÁ TỐT</span><img src="../images/hopcau/cau-haiyen-do-12.png" alt="Cầu Hải Yến Đỏ 12 quả"></div>
+          <div class="prod-info">
+            <h3>Cầu lông Hải Yến Đỏ 12 Quả</h3>
+            <p>Ống đỏ truyền thống, lông vũ trắng mịn, dành cho tập luyện và thi đấu phong trào</p>
+            <div class="prod-price"><span class="price-now">190.000đ</span><span class="price-old">230.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=haiyen-do-12" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="cau">
+          <div class="prod-img-wrap"><span class="badge">HOT</span><img src="../images/hopcau/cau-haiyen-soc-xanh.png" alt="Cầu Hải Yến Sọc Xanh 12 PSC"></div>
+          <div class="prod-info">
+            <h3>Cầu lông Hải Yến Sọc Xanh 12 PSC</h3>
+            <p>Ống sọc xanh cổ điển, 12 quả/ống, dùng trong luyện tập và thi đấu phong trào</p>
+            <div class="prod-price"><span class="price-now">200.000đ</span><span class="price-old">245.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=haiyen-soc-xanh" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+        <div class="product-card" data-cat="mockhoa">
+          <div class="prod-img-wrap"><span class="badge">HANDMADE</span><img src="../images/mockhoa/moc-khoa-xanh-la.png" alt="Móc khóa cầu xanh lá"></div>
+          <div class="prod-info">
+            <h3>Móc khóa cầu lông xanh lá</h3>
+            <p>Handmade len móc thủ công, màu xanh lá tươi mát, phụ kiện độc đáo cho dân cầu lông</p>
+            <div class="prod-price"><span class="price-now">45.000đ</span><span class="price-old">60.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=mkhoa-xanh-la" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="mockhoa">
+          <div class="prod-img-wrap"><span class="badge">HANDMADE</span><img src="../images/mockhoa/moc-khoa-hong-do.png" alt="Móc khóa cầu hồng đỏ"></div>
+          <div class="prod-info">
+            <h3>Móc khóa cầu lông hồng đỏ</h3>
+            <p>Handmade len móc thủ công, tông hồng đỏ nổi bật, dễ thương cá tính</p>
+            <div class="prod-price"><span class="price-now">40.000đ</span><span class="price-old">55.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=mkhoa-hong-do" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="mockhoa">
+          <div class="prod-img-wrap"><span class="badge">HOT</span><img src="../images/mockhoa/moc-khoa-pastel.png" alt="Móc khóa cầu pastel 3 màu"></div>
+          <div class="prod-info">
+            <h3>Móc khóa cầu lông Pastel 3 màu</h3>
+            <p>Phối 3 màu xanh – trắng – hồng pastel nhẹ nhàng, phong cách nữ tính cực kỳ đáng yêu</p>
+            <div class="prod-price"><span class="price-now">55.000đ</span><span class="price-old">70.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=mkhoa-pastel" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="mockhoa">
+          <div class="prod-img-wrap"><span class="badge">HOT</span><img src="../images/mockhoa/moc-khoa-hh15-den-hong.png" alt="Móc khóa HH15 đen hồng"></div>
+          <div class="prod-info">
+            <h3>Móc khóa cầu lông HH15 Đen Hồng</h3>
+            <p>Heaven Handmade HH15, viền đen phối hồng trắng sang trọng, kèm khoen bạc inox</p>
+            <div class="prod-price"><span class="price-now">50.000đ</span><span class="price-old">65.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=mkhoa-den-hong" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="mockhoa">
+          <div class="prod-img-wrap"><span class="badge">MỚI</span><img src="../images/mockhoa/moc-khoa-hh04-xanh.png" alt="Móc khóa HH04 xanh dương"></div>
+          <div class="prod-info">
+            <h3>Móc khóa cầu lông HH04 Xanh Dương</h3>
+            <p>Heaven Handmade HH04, gradient xanh dương đến navy, khoen bạc inox cao cấp</p>
+            <div class="prod-price"><span class="price-now">50.000đ</span><span class="price-old">65.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=mkhoa-xanh-dam" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+        <div class="product-card" data-cat="mockhoa">
+          <div class="prod-img-wrap"><span class="badge">ĐỘC ĐÁO</span><img src="../images/mockhoa/moc-khoa-hong-vot.png" alt="Móc khóa cầu hồng kèm vợt"></div>
+          <div class="prod-info">
+            <h3>Móc khóa cầu lông hồng kèm vợt</h3>
+            <p>Set móc khóa cầu hồng pastel + vợt mini đi kèm, quà tặng cực kỳ ý nghĩa cho dân cầu lông</p>
+            <div class="prod-price"><span class="price-now">60.000đ</span><span class="price-old">75.000đ</span></div>
+            <div class="prod-btns"><a href="../05_san-pham-chi-tiet/index.html?id=mkhoa-hong-vot" class="btn-view">Xem thêm</a><button class="btn-cart-add" onclick="addToCart(this)">Thêm vào giỏ</button></div>
+          </div>
+        </div>
+  <div class="pagination">
+    <button class="page-btn" id="prevBtn" disabled>&#8592;</button>
+    <button class="page-btn active">1</button>
+    <button class="page-btn">2</button>
+    <button class="page-btn">3</button>
+    <button class="page-btn" id="nextBtn">&#8594;</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../images/logo.png" alt="Butminton" height="48">
+        <p>Thương hiệu cầu lông thế hệ mới —<br>ĐẸP TỪ CÁN, BÁ TỪNG TRẬN CẦU.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/butminton.uel/" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a>
+          <a href="#" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/></svg>TikTok</a>
+          <a href="#" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Sản phẩm</h4>
+        <a href="index.html">Vợt cầu lông</a><a href="index.html">Áo thể thao</a><a href="index.html">Hộp cầu lông</a><a href="index.html">Custom Keychain</a>
+      </div>
+      <div class="footer-col">
+        <h4>Hỗ trợ</h4>
+        <a href="../09_lien-he/index.html">Chính sách đổi trả</a><a href="../09_lien-he/index.html">Chính sách giao hàng</a><a href="../09_lien-he/index.html">Liên hệ</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Butminton. All rights reserved.</p></div>
+  </footer>
+
+  <a href="../09_lien-he/index.html" class="chatbot-fab" title="Nhắn tin tư vấn">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+  </a>
+    <script src="../asset/cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

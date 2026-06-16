@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog – Butminton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../03_trang-chu/index.html" class="logo"><img src="../images/logo.png" alt="Butminton"></a>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="../03_trang-chu/index.html">Trang chủ</a></li>
+        <li><a href="../01_san-pham/index.html">Sản phẩm</a></li>
+        <li><a href="../07_ve-chung-toi/index.html">Về chúng tôi</a></li>
+        <li><a href="../08_blog/index.html" class="active">Blog</a></li>
+        <li><a href="../09_lien-he/index.html">Liên hệ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search-wrap">
+          <input type="text" placeholder="Tìm kiếm sản phẩm...">
+          <button type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+        </div>
+        <a href="../04_gio-hang/index.html" class="cart-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="../08_blog/index.html">Blog</a> › <span id="bcTitle">Bài viết</span>
+    </div>
+  </div>
+
+  <section class="article-hero">
+    <div class="container">
+      <span class="article-tag" id="articleTag">Tips Kỹ Thuật</span>
+      <h1 id="articleTitle">Đang tải bài viết...</h1>
+      <div class="article-meta">
+        <span id="articleDate">--/--/----</span>
+        <div class="dot"></div>
+        <span id="articleAuthor">Butminton Team</span>
+        <div class="dot"></div>
+        <span id="articleReadTime">-- phút đọc</span>
+      </div>
+    </div>
+  </section>
+
+  <article class="article-body" id="articleContent"></article>
+
+  <hr class="article-divider" style="max-width:800px;margin:0 auto 32px;border:none;border-top:1px solid #f0e8e8;">
+
+  <section class="author-section">
+    <div class="author-card">
+      <div class="author-avatar" id="authorInitials">BT</div>
+      <div>
+        <strong id="authorName">Butminton Team</strong>
+        <span id="authorRole">Đội ngũ Butminton</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="related-section">
+    <div class="container">
+      <h2 class="section-title">Bài Viết Liên Quan</h2>
+      <div class="blog-grid" id="relatedGrid"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../images/logo.png" alt="Butminton" height="48">
+        <p>Thương hiệu cầu lông thế hệ mới —<br>ĐẸP TỪ CÁN, BÁ TỪNG TRẬN CẦU.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/butminton.uel/" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a>
+          <a href="#" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/></svg>TikTok</a>
+          <a href="#" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Sản phẩm</h4><a href="../01_san-pham/index.html">Vợt cầu lông</a><a href="../01_san-pham/index.html">Áo thể thao</a><a href="../01_san-pham/index.html">Hộp cầu lông</a></div>
+      <div class="footer-col"><h4>Hỗ trợ</h4><a href="../09_lien-he/index.html">Chính sách đổi trả</a><a href="../09_lien-he/index.html">Liên hệ</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Butminton. All rights reserved.</p></div>
+  </footer>
+
+  <a href="../09_lien-he/index.html" class="chatbot-fab" title="Nhắn tin tư vấn">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+  </a>
+  <script src="script.js"></script>
+</body>
+</html>

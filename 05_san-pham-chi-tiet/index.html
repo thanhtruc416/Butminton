@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vợt Kumpoo Carbon Power - Butminton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../03_trang-chu/index.html" class="logo"><img src="../images/logo.png" alt="Butminton"></a>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="../03_trang-chu/index.html">Trang chủ</a></li>
+        <li><a href="../01_san-pham/index.html" class="active">Sản phẩm</a></li>
+        <li><a href="../07_ve-chung-toi/index.html">Về chúng tôi</a></li>
+        <li><a href="../08_blog/index.html">Blog</a></li>
+        <li><a href="../09_lien-he/index.html">Liên hệ</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="search-wrap">
+          <input type="text" placeholder="Tìm kiếm sản phẩm...">
+          <button type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+        </div>
+        <a href="../04_gio-hang/index.html" class="cart-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="../01_san-pham/index.html">Sản phẩm</a> › <a href="../01_san-pham/index.html">Vợt Cầu Lông</a> › <span>Kumpoo Carbon Power</span>
+    </div>
+  </div>
+
+  <section class="product-detail">
+    <div class="container detail-grid">
+      <div class="detail-images">
+        <div class="main-img-wrap"><img id="mainImg" src="../images/product-2.jpg" alt="Vợt Kumpoo Carbon Power"></div>
+        <div class="thumbnails">
+          <img class="thumb active" src="../images/product-2.jpg" alt="Ảnh 1" onclick="setMain(this)">
+          <img class="thumb" src="../images/product-1.jpg" alt="Ảnh 2" onclick="setMain(this)">
+          <img class="thumb" src="../images/product-3.jpg" alt="Ảnh 3" onclick="setMain(this)">
+          <img class="thumb" src="../images/product-4.jpg" alt="Ảnh 4" onclick="setMain(this)">
+        </div>
+      </div>
+
+      <div class="detail-info">
+        <span class="prod-badge-label">BEST SELLER CHO NEWBIE</span>
+        <h1>Vợt Kumpoo Carbon Power High-Speed</h1>
+        <div class="rating-row">
+          <span class="stars">★★★★★</span>
+          <span class="rating-text">4.8 (128 đánh giá)</span>
+        </div>
+        <div class="detail-price">
+          <span class="price-now">950.000đ</span>
+          <span class="price-old">1.250.000đ</span>
+          <span class="discount-tag">-24%</span>
+        </div>
+        <div class="prod-quote">
+          <p><em>"Vợt siêu nhẹ với khung carbon nguyên chất, mang lại tốc độ đập cầu vượt trội. Phù hợp cho người chơi muốn nâng cấp từ vợt nhôm lên carbon."</em></p>
+          <ul>
+            <li>Trọng lượng: 3U (85–89g) hoặc 4U (80–84g)</li>
+            <li>Độ cứng thân: Medium-Stiff</li>
+            <li>Vật liệu: Carbon toàn thân</li>
+          </ul>
+        </div>
+        <div class="options-section">
+          <div class="option-group">
+            <label>Chọn mức căng cước</label>
+            <select class="option-select"><option>10 kg (Mặc định)</option><option>11 kg</option><option>12 kg</option><option>13 kg</option><option>14 kg</option></select>
+          </div>
+          <div class="option-group">
+            <label>Màu quấn cán</label>
+            <select class="option-select"><option>Đỏ San Hô</option><option>Đen</option><option>Xanh dương</option><option>Trắng</option></select>
+          </div>
+        </div>
+        <div class="qty-section">
+          <label>Số lượng</label>
+          <div class="qty-control">
+            <button class="qty-btn" onclick="changeDetailQty(-1)">−</button>
+            <input type="number" id="detailQty" value="1" min="1" max="99">
+            <button class="qty-btn" onclick="changeDetailQty(1)">+</button>
+          </div>
+        </div>
+        <div class="detail-cta">
+          <button class="btn-add-cart" onclick="addToCartDetail()">Thêm vào giỏ</button>
+          <a href="../02_thanh-toan/index.html" class="btn-buy-now">Mua ngay</a>
+        </div>
+        <div class="trust-badges">
+          <div class="trust-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            <span>CHÍNH HÃNG 100%</span>
+          </div>
+          <div class="trust-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <span>SHIP NỘI THÀNH 2H</span>
+          </div>
+          <div class="trust-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+            <span>ĐỔI TRẢ 7 NGÀY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <div class="container">
+      <div class="reviews-header">
+        <h2>Đánh Giá Sản Phẩm</h2>
+        <div class="reviews-summary"><span class="big-star">★ 4.8</span><span>từ 128 đánh giá</span></div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="reviewer-info"><div class="reviewer-avatar">NT</div><div><strong>Nguyễn Thành</strong><span class="stars small">★★★★★</span></div></div>
+          <p>"Vợt nhẹ, đánh nhanh tay, giá tốt so với mặt bằng chung. Đã mua lần 2 rồi nhé!"</p>
+          <span class="review-date">12/11/2024</span>
+        </div>
+        <div class="review-card">
+          <div class="reviewer-info"><div class="reviewer-avatar">LA</div><div><strong>Lê Anh</strong><span class="stars small">★★★★★</span></div></div>
+          <p>"Shop tư vấn nhiệt tình, giao hàng nhanh. Vợt đúng như mô tả, đóng gói cẩn thận."</p>
+          <span class="review-date">05/11/2024</span>
+        </div>
+      </div>
+      <button class="btn-write-review">Viết đánh giá</button>
+    </div>
+  </section>
+
+  <section class="related-section">
+    <div class="container">
+      <h2 class="section-title">Sản Phẩm Liên Quan</h2>
+      <div class="products-grid" id="relatedGrid"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../images/logo.png" alt="Butminton" height="48">
+        <p>Thương hiệu cầu lông thế hệ mới —<br>ĐẸP TỪ CÁN, BÁ TỪNG TRẬN CẦU.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/butminton.uel/" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>Facebook</a>
+          <a href="#" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.79 1.54V6.78a4.85 4.85 0 01-1.02-.09z"/></svg>TikTok</a>
+          <a href="#" target="_blank"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Sản phẩm</h4><a href="../01_san-pham/index.html">Vợt cầu lông</a><a href="../01_san-pham/index.html">Áo thể thao</a><a href="../01_san-pham/index.html">Hộp cầu lông</a></div>
+      <div class="footer-col"><h4>Hỗ trợ</h4><a href="../09_lien-he/index.html">Chính sách đổi trả</a><a href="../09_lien-he/index.html">Chính sách giao hàng</a><a href="../09_lien-he/index.html">Liên hệ</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Butminton. All rights reserved.</p></div>
+  </footer>
+
+  <a href="../09_lien-he/index.html" class="chatbot-fab" title="Nhắn tin tư vấn">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+  </a>
+    <script src="../asset/cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

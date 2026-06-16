@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  --bg: #fff8f7; --red: #ad292e; --dark: #261817; --muted: #59413f;
+  --pink2: #fff0ef; --pink3: #ffe9e7; --white: #ffffff; --border: #f0dedd;
+  --shadow: 0 2px 12px rgba(38,24,23,0.08);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Be Vietnam Pro', sans-serif; background: var(--bg); color: var(--dark); line-height: 1.6; }
+h1, h2, h3 { font-family: 'Be Vietnam Pro', sans-serif; font-weight: 700; }
+a { text-decoration: none; }
+img { max-width: 100%; display: block; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* NAVBAR */
+.navbar { background: var(--white); position: sticky; top: 0; z-index: 200; box-shadow: 0 2px 10px rgba(0,0,0,0.07); }
+.nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; height: 72px; gap: 32px; }
+.logo img { height: 76px; }
+.nav-menu { list-style: none; display: flex; gap: 28px; }
+.nav-menu a { color: var(--muted); font-size: 14px; font-weight: 500; transition: color .2s; position: relative; }
+.nav-menu a:hover, .nav-menu a.active { color: var(--red); }
+.nav-menu a.active::after { content: ''; position: absolute; bottom: -4px; left: 0; right: 0; height: 2px; background: var(--red); border-radius: 1px; }
+.nav-actions { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+.search-wrap { display: flex; align-items: center; border: 1.5px solid var(--border); border-radius: 22px; overflow: hidden; }
+.search-wrap input { border: none; outline: none; padding: 8px 14px; font-size: 14px; background: transparent; width: 160px; }
+.search-wrap button { border: none; background: none; padding: 8px 12px; cursor: pointer; color: var(--muted); }
+.btn-consult { background: var(--red); color: #fff; border: none; padding: 9px 18px; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 600; }
+.cart-link { position: relative; color: var(--dark); display: flex; align-items: center; }
+.cart-count { position: absolute; top: -8px; right: -10px; background: var(--red); color: #fff; font-size: 11px; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.hamburger { display: none; border: none; background: none; font-size: 24px; cursor: pointer; }
+
+/* ABOUT HERO */
+.about-hero { min-height: 70vh; background-size: cover; background-position: center; display: flex; align-items: center; position: relative; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(38,24,23,0.85) 0%, rgba(38,24,23,0.3) 100%); }
+.about-hero-content { position: relative; z-index: 2; max-width: 700px; padding: 0 48px; color: #fff; }
+.about-hero-content h1 { font-size: 48px; line-height: 1.1; margin-bottom: 20px; }
+.about-hero-content p { font-size: 16px; color: rgba(255,255,255,0.85); line-height: 1.8; max-width: 560px; }
+
+/* BRAND PERSONA */
+.brand-persona { padding: 80px 0; }
+.persona-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 64px; align-items: center; }
+.persona-img { display: flex; justify-content: center; }
+.persona-placeholder { width: 260px; height: 260px; border-radius: 50%; background: var(--pink3); display: flex; align-items: center; justify-content: center; font-size: 100px; box-shadow: var(--shadow); }
+.persona-text .section-tag { display: inline-block; color: var(--red); font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 12px; }
+.persona-text h2 { font-size: 24px; font-weight: 700; margin-bottom: 20px; line-height: 1.15; }
+.persona-text p { font-size: 15px; color: var(--muted); margin-bottom: 16px; line-height: 1.8; }
+
+/* VALUES */
+.values-section { padding: 72px 0; background: var(--pink2); }
+.section-title { font-weight: 600; font-size: 24px; text-align: center; margin-bottom: 40px; }
+.values-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.value-card { background: var(--white); border-radius: 12px; padding: 32px 20px; text-align: center; box-shadow: var(--shadow); }
+.value-icon { width: 64px; height: 64px; border-radius: 50%; background: var(--pink3); display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; color: var(--red); }
+.value-card h3 { font-size: 18px; margin-bottom: 10px; font-family: 'Be Vietnam Pro', sans-serif; font-weight: 700; }
+.value-card p { font-size: 13px; color: var(--muted); line-height: 1.7; }
+
+/* TEAM */
+.team-section { padding: 72px 0; }
+.team-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; }
+.team-member { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+.member-avatar { width: 88px; height: 88px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; box-shadow: var(--shadow); }
+.team-member strong { font-size: 13px; font-weight: 700; color: var(--dark); line-height: 1.3; }
+.team-member span { font-size: 12px; color: var(--muted); }
+
+/* SLOGAN */
+.slogan-banner { background: var(--red); padding: 72px 0; text-align: center; }
+.slogan-banner h2 { font-size: 32px; color: #fff; margin-bottom: 24px; }
+.btn-white { display: inline-block; background: #fff; color: var(--red); border: 2px solid #fff; padding: 13px 32px; border-radius: 6px; font-weight: 700; font-size: 15px; transition: all .2s; }
+.btn-white:hover { background: transparent; color: #fff; }
+
+/* FOOTER */
+.site-footer { background: var(--dark); color: #fff; padding: 48px 0 0; }
+.footer-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px 40px; display: grid; align-items: start; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+.footer-brand img { height: 80px; }
+.footer-brand p { color: #b0a09f; font-size: 14px; margin: 14px 0 16px; }
+.social-links { display: flex; gap: 16px; }
+.social-links a { color: #b0a09f; font-size: 14px; display: inline-flex; align-items: center; gap: 6px; transition: color .2s; } .social-links a:hover { color: #fff; }
+.footer-col { display: flex; flex-direction: column; gap: 10px; }
+.footer-col h4 { color: #fff; font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+.footer-col a { color: #b0a09f; font-size: 14px; }
+.footer-bottom { border-top: 1px solid #3d2928; text-align: center; padding: 16px; }
+.footer-bottom p { font-size: 13px; color: #b0a09f; }
+.chatbot-fab { position: fixed; bottom: 28px; right: 28px; width: 56px; height: 56px; border-radius: 50%; background: var(--red); color: #fff; border: none; font-size: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 18px rgba(173,41,46,0.45); z-index: 999; transition: transform .2s; }
+.chatbot-fab:hover { transform: scale(1.1); }
+
+@media (max-width: 1024px) { .team-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px) {
+  .persona-grid { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .nav-menu { display: none; position: absolute; top: 72px; left: 0; right: 0; background: #fff; flex-direction: column; padding: 16px 24px; box-shadow: 0 8px 16px rgba(0,0,0,0.1); gap: 16px; z-index: 100; }
+  .nav-menu.open { display: flex; }
+  .hamburger { display: block; }
+  .search-wrap { display: none; }
+  .about-hero-content h1 { font-size: 36px; }
+  .about-hero-content { padding: 0 24px; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-inner { grid-template-columns: 1fr; gap: 24px; }
+}
