@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Blog pagination + category filtering
-const POSTS_PER_PAGE = 3;
+const POSTS_PER_PAGE = 4;
 let currentPage = 1;
 let currentCat = 'all';
 
