@@ -5,12 +5,21 @@ let currentCat = 'all';
 let currentSearch = '';
 
 // ---- Helpers ----
+const CAT_KEYWORDS = {
+  'vot': 'vợt cầu lông set vợt racket',
+  'ao': 'áo thể thao áo thi đấu',
+  'quan': 'quần váy thể thao',
+  'cau': 'hộp cầu lông shuttlecock cầu',
+  'mockhoa': 'móc khóa keychain custom'
+};
+
 function getFilteredCards() {
   return Array.from(document.querySelectorAll('.product-card')).filter(c => {
     const catOk = currentCat === 'all' || c.dataset.cat === currentCat;
     const name = c.querySelector('h3').textContent.toLowerCase();
     const desc = c.querySelector('p') ? c.querySelector('p').textContent.toLowerCase() : '';
-    const searchOk = !currentSearch || name.includes(currentSearch) || desc.includes(currentSearch);
+    const catKeywords = (CAT_KEYWORDS[c.dataset.cat] || '').toLowerCase();
+    const searchOk = !currentSearch || name.includes(currentSearch) || desc.includes(currentSearch) || catKeywords.includes(currentSearch);
     return catOk && searchOk;
   });
 }
