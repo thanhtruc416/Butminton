@@ -65,7 +65,13 @@ const newsletterForm = document.querySelector('.newsletter-form');
 if (newsletterForm) {
   newsletterForm.querySelector('button').addEventListener('click', () => {
     const input = newsletterForm.querySelector('input');
-    if (input.value.trim()) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!input.value.trim()) {
+      input.focus();
+    } else if (!emailRegex.test(input.value.trim())) {
+      alert('Vui lòng nhập địa chỉ email hợp lệ.');
+      input.focus();
+    } else {
       alert('Cảm ơn bạn đã đăng ký nhận tin từ Butminton! 🏸');
       input.value = '';
     }

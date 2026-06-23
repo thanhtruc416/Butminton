@@ -66,14 +66,21 @@ function scrollToGrid() {
 }
 
 // ---- Sort ----
+const originalCardOrder = Array.from(document.querySelectorAll('#productsGrid .product-card'));
+
 function applySorting() {
   const sortSel = document.querySelectorAll('.filter-select')[1];
   if (!sortSel) return;
   const grid = document.getElementById('productsGrid');
   if (!grid) return;
-  const cards = Array.from(grid.querySelectorAll('.product-card'));
   const val = sortSel.value;
 
+  if (val === 'Mới nhất') {
+    originalCardOrder.forEach(c => grid.appendChild(c));
+    return;
+  }
+
+  const cards = Array.from(grid.querySelectorAll('.product-card'));
   cards.sort((a, b) => {
     const pa = parseInt((a.querySelector('.price-now').textContent).replace(/\./g, '').replace('đ', '')) || 0;
     const pb = parseInt((b.querySelector('.price-now').textContent).replace(/\./g, '').replace('đ', '')) || 0;
