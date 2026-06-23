@@ -178,6 +178,90 @@ const POSTS = {
     related: ['hau-truong', 'ao-vs-ngoai', 'review-kumpoo']
   },
 
+  'loi-smash': {
+    tag: 'Tips Kỹ Thuật', tagCat: 'tips',
+    title: '5 Lỗi Kỹ Thuật Phổ Biến Khiến Cú Smash Của Bạn Mất Lực',
+    date: '25/09/2026', author: 'Butminton Team', readTime: '5 phút đọc',
+    authorInitials: 'BT', authorRole: 'Đội ngũ Butminton',
+    img: '../images/vot/racket-kumpoo-plum.png',
+    content: `
+      <p>Smash là cú đánh tấn công mạnh nhất trong cầu lông, nhưng nhiều người chơi phong trào vẫn chưa phát huy hết tiềm năng của nó. Dưới đây là 5 lỗi phổ biến nhất — và cách sửa từng lỗi một cách thực tế.</p>
+      <h2>Lỗi 1: Đứng quá thẳng khi đập</h2>
+      <p>Khi thực hiện smash, nhiều người đứng thẳng người thay vì nghiêng 45 độ. Tư thế này triệt tiêu lực xoay hông — thứ tạo ra phần lớn năng lượng trong cú đập. Sửa: xoay vai và hông về phía sau trước khi vung vợt.</p>
+      <h2>Lỗi 2: Đập cầu quá muộn</h2>
+      <p>Điểm tiếp xúc lý tưởng là khi cầu đang ở điểm cao nhất và tay duỗi thẳng hoàn toàn. Đập muộn hơn 0.3 giây thôi là lực đã giảm đáng kể và góc đập không còn sắc nữa.</p>
+      <div class="tip-box"><p>Bài tập: Ném bóng tennis lên cao rồi đánh bằng vợt ở điểm đỉnh — cảm giác đó chính xác là timing bạn cần.</p></div>
+      <h2>Lỗi 3: Không bật cổ tay</h2>
+      <p>Cú smash thiếu bật cổ tay (snap) mất đến 30–40% tốc độ. Cổ tay phải "bật" đúng thời điểm vợt chạm cầu, không phải trước hay sau. Luyện riêng động tác này 5 phút mỗi ngày để thuần thục.</p>
+      <h2>Lỗi 4: Nhìn xuống sân thay vì nhìn cầu</h2>
+      <p>Mắt phải theo dõi cầu từ khi cầu qua lưới cho đến lúc vợt chạm. Nhiều người mắc lỗi nhìn xuống sân để "nhắm mục tiêu" — điều này khiến tay mất đồng bộ và cú đập lệch hướng.</p>
+      <h2>Lỗi 5: Dùng tay quá nhiều, thân quá ít</h2>
+      <p>Smash mạnh đến từ toàn thân: đẩy chân, xoay hông, xoay vai, rồi mới đến cánh tay và cổ tay. Nếu chỉ dùng tay, lực đập bị giới hạn và dễ chấn thương khuỷu tay. Hãy nghĩ đến smash như một chuỗi domino từ chân đến cổ tay.</p>
+      <p>Sửa đúng 5 lỗi này, cú smash của bạn sẽ nhanh hơn và chính xác hơn rõ rệt chỉ sau 2–3 tuần luyện tập có chủ đích. Kiên nhẫn là chìa khóa!</p>
+    `,
+    related: ['meo-dap-cau', 'khoi-dong', 'cang-cuoc']
+  },
+
+  'outfit-cau-long': {
+    tag: 'Lifestyle & Vlog', tagCat: 'lifestyle',
+    title: 'Outfit Cầu Lông Đẹp Không Cần Đắt – Gợi Ý Phối Đồ Từ Butminton',
+    date: '20/09/2026', author: 'Hoàng Ngọc Ánh', readTime: '4 phút đọc',
+    authorInitials: 'HNA', authorRole: 'Designer – Butminton',
+    img: '../images/ao/ao-thi-dau-do-1.png',
+    content: `
+      <p>Ai nói phải chi cả triệu mới trông ngầu trên sân? Với ngân sách dưới 500k, bạn hoàn toàn có thể mix được 4 bộ đồ đẹp, đồng bộ và không đụng hàng. Đội ngũ Butminton chia sẻ 4 gợi ý phối đồ thực tế nhất.</p>
+      <h2>Bộ 1: Đỏ – Trắng – Năng Động</h2>
+      <p>Áo đỏ phối quần trắng là combo kinh điển không bao giờ lỗi thời. Chọn áo Voltrix Đỏ Nam (250k) + Quần Thể Thao Nữ Đen Ngắn (185k) = 435k, còn dư để mua băng cổ tay.</p>
+      <div class="tip-box"><p>Bí quyết: Chọn 2 màu tương phản mạnh (đỏ-trắng, đen-vàng, xanh-trắng) thay vì cùng tone — bộ đồ sẽ trông có chủ đích và không "nhàm".</p></div>
+      <h2>Bộ 2: Monochrome All-Black</h2>
+      <p>Áo đen phối quần đen — đơn giản nhưng cực kỳ sắc. Áo Thi Đấu Nam Đen Hồng (290k) + Quần Thể Thao All Black (245k) tạo ra look chuyên nghiệp mà không cần thương hiệu ngoại.</p>
+      <h2>Bộ 3: Màu Sắc Nổi Bật</h2>
+      <p>Dành cho người thích nổi trội: Áo Thi Đấu Nữ Tím Yonex (195k) + Váy Cầu Lông Nữ Trắng Hồng (210k) = combo nữ tính nhưng vẫn năng động. Thêm cặp giày trắng là hoàn hảo.</p>
+      <h2>Bộ 4: Tông Lạnh Năng Động</h2>
+      <p>Quần Thể Thao Nam Xanh Dương (210k) phối áo trắng — dễ phối, dễ giặt, và nhìn sạch sẽ trên sân. Thêm khăn đầu đỏ để tạo điểm nhấn màu sắc.</p>
+      <h2>Nguyên tắc phối đồ cầu lông</h2>
+      <ul>
+        <li>Ưu tiên vải khô nhanh — tránh cotton 100% vì sẽ nặng và bí hơi khi mồ hôi</li>
+        <li>Màu áo và quần không nhất thiết phải cùng bộ — chỉ cần hài hòa</li>
+        <li>Giày cầu lông phải là đế cao su mềm — không chơi giày chạy bộ vì dễ trơn và hại khớp gối</li>
+      </ul>
+      <p>Đồ cầu lông không cần đắt để đẹp — cần đúng màu, đúng size, và đúng chất liệu. Butminton thiết kế ra để giúp bạn trông tự tin trên sân mà không phải nghĩ quá nhiều về ngân sách.</p>
+    `,
+    related: ['hau-truong', 'ra-mat', 'ao-vs-ngoai']
+  },
+
+  'hop-cau-san-ho': {
+    tag: 'Review Sản Phẩm', tagCat: 'review',
+    title: 'Top 5 Hộp Cầu Lông Dành Cho Sân Hở – Đánh Giá Chi Tiết',
+    date: '15/09/2026', author: 'Butminton Team', readTime: '5 phút đọc',
+    authorInitials: 'BT', authorRole: 'Đội ngũ Butminton',
+    img: '../images/hopcau/cau-haiyen-outdoor.png',
+    content: `
+      <p>Chọn cầu lông cho sân hở không đơn giản như sân trong nhà. Gió, độ ẩm và bề mặt sân khác nhau đòi hỏi loại cầu có đặc tính riêng. Chúng tôi đã test 5 dòng phổ biến nhất trên thị trường để đưa ra đánh giá thực tế nhất.</p>
+      <h2>Tiêu chí đánh giá</h2>
+      <ul>
+        <li>Khả năng chống gió (ổn định khi bay)</li>
+        <li>Độ bền lông/vỏ trong điều kiện ngoài trời</li>
+        <li>Cảm giác bay và độ trả lực khi đập</li>
+        <li>Giá thành / hộp 12 quả</li>
+      </ul>
+      <h2>1. Hai Yến Outdoor – Lựa chọn số 1 cho sân hở</h2>
+      <p>Được thiết kế đặc biệt cho điều kiện ngoài trời, cầu Hai Yến Outdoor có lông tổng hợp bền hơn 40% so với lông tự nhiên khi tiếp xúc với độ ẩm. Bay ổn định trong gió nhẹ đến vừa, lực trả tốt. Giá 85k/hộp — tốt nhất trong phân khúc phổ thông.</p>
+      <div class="tip-box"><p>Khuyến nghị: Đây là lựa chọn mặc định cho sân hở phổ thông. Đặc biệt phù hợp chơi buổi chiều tối khi gió không quá mạnh.</p></div>
+      <h2>2. Hai Yến HYYA – Nhanh, nhẹ, ổn định</h2>
+      <p>Dòng cầu nhanh của Hai Yến với thiết kế lông khít hơn giúp ổn định trong gió. Cảm giác đập sắc, phù hợp người chơi tốc độ. Nhược điểm: lông dễ xù sau 3–4 game nếu đập smash nhiều.</p>
+      <h2>3. Hai Yến HyTec S90 – Cao cấp nhất trong dòng</h2>
+      <p>Lông vũ tự nhiên chất lượng cao với xử lý chống ẩm. Bay cực mượt và cảm giác chuyên nghiệp. Tuy nhiên, ở sân hở có gió lớn thì bay kém ổn hơn S80. Giá 150k/hộp — phù hợp thi đấu sân hở có mái che.</p>
+      <h2>4. Hai Yến S80 – Cân bằng tốt nhất</h2>
+      <p>Cầu S80 tổng hợp cho cảm giác gần với cầu lông tự nhiên nhưng bền hơn đáng kể. Bay ổn định trong nhiều điều kiện gió khác nhau. Đây là lựa chọn cân bằng nhất cho người chơi phong trào sân hở.</p>
+      <h2>5. Hai Yến S70 – Ngân sách thân thiện</h2>
+      <p>Giá rẻ nhất trong danh sách (55k/hộp) nhưng chất lượng vẫn đáng tin cậy cho chơi casual. Không phù hợp thi đấu nhưng hoàn toàn ổn cho buổi tập bình thường ở sân hở.</p>
+      <h2>Kết luận nhanh</h2>
+      <p>Sân hở phổ thông → Hai Yến Outdoor hoặc S80. Thi đấu nghiêm túc → HyTec S90. Tập luyện tiết kiệm → S70. Tất cả đều có sẵn tại Butminton với giá cạnh tranh và giao hàng nhanh.</p>
+    `,
+    related: ['review-kumpoo', 'ao-vs-ngoai', 'cang-cuoc']
+  },
+
   'ao-vs-ngoai': {
     tag: 'Review Sản Phẩm', tagCat: 'review',
     title: 'So Sánh Áo Cầu Lông Butminton vs Các Thương Hiệu Ngoại – Ai Thắng?',
@@ -278,4 +362,13 @@ document.addEventListener('DOMContentLoaded', () => {
 function getCartCount() { return parseInt(localStorage.getItem('cartCount') || '0'); }
 document.getElementById('hamburger').addEventListener('click', () => {
   document.getElementById('navMenu').classList.toggle('open');
+});
+
+// Search redirect
+document.querySelector('.search-wrap button').addEventListener('click', () => {
+  const q = document.querySelector('.search-wrap input').value.trim();
+  if (q) window.location.href = '../01_san-pham/index.html?q=' + encodeURIComponent(q);
+});
+document.querySelector('.search-wrap input').addEventListener('keypress', e => {
+  if (e.key === 'Enter') { const q = e.target.value.trim(); if (q) window.location.href = '../01_san-pham/index.html?q=' + encodeURIComponent(q); }
 });

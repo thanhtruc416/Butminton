@@ -135,26 +135,26 @@ const PRODUCTS = {
     type: 'ao'
   },
   'quan-do': {
-    name: 'Áo thi đấu Voltrix Tím Hồng',
+    name: 'Quần cầu lông Voltrix Hồng Rực',
     badge: 'MỚI',
     price: '250.000đ',
     oldPrice: '310.000đ',
     discount: '-19%',
-    img: '../images/ao/quan-cau-long-do.png',
-    desc: 'Cổ V, tone tím hồng pastel gradient lãng mạn, dành cho người yêu phong cách nữ tính.',
+    img: '../images/ao/quan-preview3.jpg',
+    desc: 'Vải thun lạnh co giãn 4 chiều, tone hồng magenta nổi bật, cạp thun thoải mái, thoát mồ hôi nhanh trên sân cầu.',
     specs: ['Thương hiệu: Voltrix', 'Chất liệu: Polyester cao cấp', 'Co giãn: 4 chiều', 'Size: S / M / L / XL / XXL'],
-    type: 'ao'
+    type: 'quan'
   },
   'quan-xanh': {
-    name: 'Áo thi đấu Voltrix Xanh Gradient',
+    name: 'Quần cầu lông Voltrix Trắng Xanh',
     badge: 'MỚI',
     price: '230.000đ',
     oldPrice: '290.000đ',
     discount: '-21%',
-    img: '../images/ao/quan-cau-long-xanh.png',
-    desc: 'Cổ V, gradient xanh biển tươi mát từ trắng xuống xanh đậm, logo Voltrix tinh tế.',
-    specs: ['Thương hiệu: Voltrix', 'Chất liệu: Polyester cao cấp', 'Co giãn: 4 chiều', 'Size: S / M / L / XL / XXL'],
-    type: 'ao'
+    img: '../images/ao/q-prev-a.jpg',
+    desc: 'Vải lưới cao cấp thoáng khí, màu trắng phối viền xanh navy thể thao, co giãn thoải mái trong từng pha di chuyển.',
+    specs: ['Thương hiệu: Voltrix', 'Chất liệu: Polyester lưới cao cấp', 'Co giãn: 4 chiều', 'Size: S / M / L / XL / XXL'],
+    type: 'quan'
   },
   'set-ao-quan': {
     name: 'Áo thi đấu Voltrix Hồng Camo',
@@ -344,6 +344,193 @@ const PRODUCTS = {
     desc: 'Ống sọc xanh cổ điển đặc trưng, 12 quả/ống, dùng trong luyện tập và thi đấu phong trào.',
     specs: ['Thương hiệu: Hải Yến', 'Số lượng: 12 quả/ống', 'Model: Badminton Classic', 'Ống màu: Sọc xanh'],
     type: 'cau'
+  },
+  'ao-nam-do-trang': {
+    name: 'Áo Thi Đấu Nam Đỏ Trắng',
+    badge: 'HOT',
+    price: '280.000đ',
+    oldPrice: '350.000đ',
+    discount: '-20%',
+    img: '../images/ao/p-8774467.jpg',
+    desc: 'Jersey thi đấu chuẩn tournament, vải thun lạnh chống tia UV, cổ tròn thoải mái, phù hợp thi đấu chuyên nghiệp.',
+    specs: ['Thương hiệu: Blibli Sport', 'Chất liệu: Polyester cao cấp', 'Co giãn: 4 chiều', 'Size: S / M / L / XL / XXL'],
+    type: 'ao'
+  },
+  'ao-voltrix-do': {
+    name: 'Áo Thi Đấu Voltrix Đỏ Nam',
+    badge: 'MỚI',
+    price: '250.000đ',
+    oldPrice: '320.000đ',
+    discount: '-22%',
+    img: '../images/ao/p-8713604.jpg',
+    desc: 'Cổ tròn, màu đỏ rực thi đấu chuyên nghiệp, vải polyester siêu nhẹ thoáng khí, thoát mồ hôi cực nhanh.',
+    specs: ['Thương hiệu: Voltrix', 'Chất liệu: Polyester cao cấp', 'Co giãn: 4 chiều', 'Size: S / M / L / XL / XXL'],
+    type: 'ao'
+  },
+  'ao-nam-den-hong': {
+    name: 'Áo Thi Đấu Nam Đen Hồng',
+    badge: 'HOT',
+    price: '290.000đ',
+    oldPrice: '370.000đ',
+    discount: '-22%',
+    img: '../images/ao/p-8796050.jpg',
+    desc: 'Jersey đen viền hồng magenta cá tính, vải thun lạnh co giãn 4 chiều, thoát mồ hôi nhanh trên sân.',
+    specs: ['Thương hiệu: Voltrix', 'Chất liệu: Polyester cao cấp', 'Co giãn: 4 chiều', 'Size: S / M / L / XL / XXL'],
+    type: 'ao'
+  },
+  'ao-nu-tim-yonex': {
+    name: 'Áo Thi Đấu Nữ Tím Yonex',
+    badge: 'MỚI',
+    price: '195.000đ',
+    oldPrice: '250.000đ',
+    discount: '-22%',
+    img: '../images/ao/p-19902436.jpg',
+    desc: 'Áo nữ tím grape chính hãng Yonex, cổ tròn nhẹ nhàng, co giãn 4 chiều đỉnh cao, phù hợp thi đấu lẫn tập luyện.',
+    specs: ['Thương hiệu: Yonex', 'Chất liệu: Polyester', 'Co giãn: 4 chiều', 'Size: XS / S / M / L / XL'],
+    type: 'ao'
+  },
+  'ao-nam-yonex-den': {
+    name: 'Áo Thể Thao Nam Yonex Đen',
+    badge: 'MỚI',
+    price: '220.000đ',
+    oldPrice: '280.000đ',
+    discount: '-21%',
+    img: '../images/ao/p-17742425.jpg',
+    desc: 'Áo nam đen Yonex thiết kế tối giản, vải cool dry siêu thoáng, phù hợp cả tập luyện lẫn thi đấu phong trào.',
+    specs: ['Thương hiệu: Yonex', 'Chất liệu: Cool Dry', 'Co giãn: 2 chiều', 'Size: S / M / L / XL / XXL'],
+    type: 'ao'
+  },
+  'vay-trang-hong': {
+    name: 'Váy Cầu Lông Nữ Trắng Hồng',
+    badge: 'MỚI',
+    price: '210.000đ',
+    oldPrice: '270.000đ',
+    discount: '-22%',
+    img: '../images/ao/quan-preview2.jpg',
+    desc: 'Váy thể thao crinkle trắng, trong lót quần hồng, kiểu dáng trẻ trung nữ tính, co giãn thoải mái.',
+    specs: ['Thương hiệu: Voltrix', 'Chất liệu: Polyester crinkle', 'Co giãn: 4 chiều', 'Size: S / M / L / XL'],
+    type: 'quan'
+  },
+  'quan-nam-den': {
+    name: 'Quần Thể Thao Nam Đen',
+    badge: 'HOT',
+    price: '230.000đ',
+    oldPrice: '290.000đ',
+    discount: '-21%',
+    img: '../images/ao/s-33417688.jpg',
+    desc: 'Quần đen co giãn 4 chiều, vải khô nhanh thoát mồ hôi, dáng slim phù hợp tập luyện cường độ cao.',
+    specs: ['Thương hiệu: Sportswear', 'Chất liệu: Polyester khô nhanh', 'Co giãn: 4 chiều', 'Size: S / M / L / XL / XXL'],
+    type: 'quan'
+  },
+  'quan-navy-tui': {
+    name: 'Quần Thể Thao Navy Túi Điện Thoại',
+    badge: 'MỚI',
+    price: '270.000đ',
+    oldPrice: '340.000đ',
+    discount: '-21%',
+    img: '../images/ao/s-33417698.jpg',
+    desc: 'Quần navy xanh đậm có túi bên hông đựng điện thoại tiện lợi, lớp short bên trong chống lộ khi vận động.',
+    specs: ['Thương hiệu: Sportswear Pro', 'Chất liệu: Polyester/Spandex', 'Co giãn: 4 chiều', 'Size: S / M / L / XL / XXL'],
+    type: 'quan'
+  },
+  'quan-all-black': {
+    name: 'Quần Thể Thao All Black',
+    badge: 'MỚI',
+    price: '245.000đ',
+    oldPrice: '310.000đ',
+    discount: '-21%',
+    img: '../images/ao/s-33417701.jpg',
+    desc: 'Quần đen tối giản phong cách all-black, vải thun lạnh cao cấp, dáng thẳng thoải mái trong mọi tình huống.',
+    specs: ['Thương hiệu: Sportswear Pro', 'Chất liệu: Thun lạnh cao cấp', 'Co giãn: 4 chiều', 'Size: S / M / L / XL / XXL'],
+    type: 'quan'
+  },
+  'quan-nam-xanh': {
+    name: 'Quần Thể Thao Nam Xanh Dương',
+    badge: 'HOT',
+    price: '210.000đ',
+    oldPrice: '265.000đ',
+    discount: '-21%',
+    img: '../images/ao/s-5547137.jpg',
+    desc: 'Quần xanh dương nổi bật, vải lưới thoáng khí, thiết kế gọn nhẹ phù hợp cầu lông và chạy bộ.',
+    specs: ['Thương hiệu: Sportswear', 'Chất liệu: Polyester mesh', 'Co giãn: 2 chiều', 'Size: S / M / L / XL / XXL'],
+    type: 'quan'
+  },
+  'quan-bike-short': {
+    name: 'Quần Bike Short Nữ Đen',
+    badge: 'MỚI',
+    price: '195.000đ',
+    oldPrice: '250.000đ',
+    discount: '-22%',
+    img: '../images/ao/s-6283570.jpg',
+    desc: 'Quần bike short ôm sát đen, co giãn 4 chiều, thoáng khí, phù hợp tập gym và cầu lông nhẹ nhàng.',
+    specs: ['Thương hiệu: Voltrix', 'Chất liệu: Spandex cao cấp', 'Co giãn: 4 chiều', 'Size: XS / S / M / L / XL'],
+    type: 'quan'
+  },
+  'quan-nu-den-ngan': {
+    name: 'Quần Thể Thao Nữ Đen Ngắn',
+    badge: 'MỚI',
+    price: '185.000đ',
+    oldPrice: '240.000đ',
+    discount: '-23%',
+    img: '../images/ao/s-2694942.jpg',
+    desc: 'Quần nữ đen ngắn thể thao, lưng thun cao co giãn êm, thiết kế gọn đẹp linh hoạt trên sân.',
+    specs: ['Thương hiệu: Voltrix', 'Chất liệu: Polyester cao cấp', 'Co giãn: 4 chiều', 'Size: XS / S / M / L / XL'],
+    type: 'quan'
+  },
+  'quan-chay-bo-den': {
+    name: 'Quần Chạy Bộ Nam Đen',
+    badge: 'MỚI',
+    price: '220.000đ',
+    oldPrice: '275.000đ',
+    discount: '-20%',
+    img: '../images/ao/s-4803915.jpg',
+    desc: 'Quần chạy bộ đen dáng slim, vải cool-dry thoát nhiệt nhanh, phù hợp mọi cường độ vận động ngoài trời.',
+    specs: ['Thương hiệu: Sportswear', 'Chất liệu: Cool-Dry Polyester', 'Co giãn: 4 chiều', 'Size: S / M / L / XL / XXL'],
+    type: 'quan'
+  },
+  'quan-nu-xanh': {
+    name: 'Quần Thể Thao Nữ Xanh Dương',
+    badge: 'HOT',
+    price: '200.000đ',
+    oldPrice: '255.000đ',
+    discount: '-22%',
+    img: '../images/ao/s-7787912.jpg',
+    desc: 'Quần nữ xanh dương viền trắng phong cách retro, vải co giãn thoải mái khi di chuyển trên sân.',
+    specs: ['Thương hiệu: Voltrix', 'Chất liệu: Polyester co giãn', 'Co giãn: 4 chiều', 'Size: XS / S / M / L / XL'],
+    type: 'quan'
+  },
+  'quan-soc-mau': {
+    name: 'Quần Thể Thao Nam Sọc Màu',
+    badge: 'MỚI',
+    price: '215.000đ',
+    oldPrice: '270.000đ',
+    discount: '-20%',
+    img: '../images/ao/s-7188071.jpg',
+    desc: 'Quần sọc ngang nhiều màu cá tính, vải thun nhẹ thoáng khí, phong cách sporty nổi bật trên sân.',
+    specs: ['Thương hiệu: Sportswear', 'Chất liệu: Polyester nhẹ', 'Co giãn: 2 chiều', 'Size: S / M / L / XL / XXL'],
+    type: 'quan'
+  },
+  'quan-ke-soc': {
+    name: 'Quần Cầu Lông Kẻ Sọc Đen Trắng',
+    badge: 'MỚI',
+    price: '220.000đ',
+    oldPrice: '280.000đ',
+    discount: '-21%',
+    img: '../images/ao/q-prev-d.jpg',
+    desc: 'Quần kẻ sọc đen trắng cá tính, vải cotton-blend thoải mái, phong cách retro-sport độc đáo.',
+    specs: ['Thương hiệu: Sportswear', 'Chất liệu: Cotton-Polyester blend', 'Co giãn: 2 chiều', 'Size: S / M / L / XL / XXL'],
+    type: 'quan'
+  },
+  'quan-tre-em-yonex': {
+    name: 'Quần Cầu Lông Trẻ Em Yonex',
+    badge: 'MỚI',
+    price: '165.000đ',
+    oldPrice: '210.000đ',
+    discount: '-21%',
+    img: '../images/ao/p-35647221.jpg',
+    desc: 'Quần trẻ em bền đẹp chính hãng Yonex, vải thoáng mát co giãn, phù hợp bé 8–15 tuổi tập luyện cầu lông.',
+    specs: ['Thương hiệu: Yonex', 'Chất liệu: Cool-Dry', 'Co giãn: 2 chiều', 'Size: S / M / L (trẻ em)'],
+    type: 'quan'
   }
 };
 
@@ -359,8 +546,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('mainImg').src = p.img;
     document.getElementById('mainImg').alt = p.name;
 
-    // Thumbnails — show same image in all slots
-    document.querySelectorAll('.thumb').forEach(t => { t.src = p.img; t.alt = p.name; });
+    // Thumbnails — only show 1 (single image per product), hide the rest
+    const thumbs = document.querySelectorAll('.thumb');
+    thumbs.forEach((t, i) => {
+      if (i === 0) { t.src = p.img; t.alt = p.name; t.classList.add('active'); }
+      else t.style.display = 'none';
+    });
 
     // Title & page title
     document.querySelector('.detail-info h1').textContent = p.name;
@@ -492,3 +683,48 @@ function addToCartDetail() {
 document.getElementById('hamburger').addEventListener('click', () => {
   document.getElementById('navMenu').classList.toggle('open');
 });
+
+// Search redirect
+document.querySelector('.search-wrap button').addEventListener('click', () => {
+  const q = document.querySelector('.search-wrap input').value.trim();
+  if (q) window.location.href = '../01_san-pham/index.html?q=' + encodeURIComponent(q);
+});
+document.querySelector('.search-wrap input').addEventListener('keypress', e => {
+  if (e.key === 'Enter') {
+    const q = e.target.value.trim();
+    if (q) window.location.href = '../01_san-pham/index.html?q=' + encodeURIComponent(q);
+  }
+});
+
+// Write review form
+document.querySelector('.btn-write-review').addEventListener('click', function () {
+  if (document.getElementById('reviewForm')) return;
+  const form = document.createElement('div');
+  form.id = 'reviewForm';
+  form.style.cssText = 'background:#fff5f5;border:1px solid #f5c6c6;border-radius:12px;padding:20px;margin-top:16px;';
+  form.innerHTML = `
+    <h3 style="margin:0 0 12px;font-size:16px;">Viết đánh giá của bạn</h3>
+    <div style="margin-bottom:10px;">
+      <label style="font-size:13px;color:#666;display:block;margin-bottom:4px;">Họ tên *</label>
+      <input type="text" placeholder="Nguyễn Văn A" style="width:100%;padding:8px 12px;border:1px solid #ddd;border-radius:8px;font-size:14px;box-sizing:border-box;">
+    </div>
+    <div style="margin-bottom:10px;">
+      <label style="font-size:13px;color:#666;display:block;margin-bottom:4px;">Nhận xét *</label>
+      <textarea rows="3" placeholder="Chia sẻ trải nghiệm của bạn..." style="width:100%;padding:8px 12px;border:1px solid #ddd;border-radius:8px;font-size:14px;box-sizing:border-box;resize:vertical;"></textarea>
+    </div>
+    <div style="display:flex;gap:8px;">
+      <button onclick="submitReview(this)" style="background:#ad292e;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-size:14px;cursor:pointer;font-weight:600;">Gửi đánh giá</button>
+      <button onclick="document.getElementById('reviewForm').remove()" style="background:#f5f5f5;color:#555;border:1px solid #ddd;padding:10px 20px;border-radius:8px;font-size:14px;cursor:pointer;">Hủy</button>
+    </div>`;
+  this.insertAdjacentElement('afterend', form);
+  form.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+});
+
+function submitReview(btn) {
+  const form = btn.closest('#reviewForm');
+  const name = form.querySelector('input').value.trim();
+  const text = form.querySelector('textarea').value.trim();
+  if (!name || !text) { alert('Vui lòng điền đầy đủ thông tin.'); return; }
+  form.innerHTML = '<div style="text-align:center;padding:20px;color:#2e7d32;font-size:15px;font-weight:600;">✓ Cảm ơn bạn đã đánh giá! Nhận xét sẽ được duyệt sớm.</div>';
+  setTimeout(() => form.remove(), 3000);
+}

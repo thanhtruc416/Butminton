@@ -120,3 +120,12 @@ document.addEventListener('DOMContentLoaded', () => {
 document.getElementById('hamburger').addEventListener('click', () => {
   document.getElementById('navMenu').classList.toggle('open');
 });
+
+// Search redirect
+document.querySelector('.search-wrap button').addEventListener('click', () => {
+  const q = document.querySelector('.search-wrap input').value.trim();
+  if (q) window.location.href = '../01_san-pham/index.html?q=' + encodeURIComponent(q);
+});
+document.querySelector('.search-wrap input').addEventListener('keypress', e => {
+  if (e.key === 'Enter') { const q = e.target.value.trim(); if (q) window.location.href = '../01_san-pham/index.html?q=' + encodeURIComponent(q); }
+});
